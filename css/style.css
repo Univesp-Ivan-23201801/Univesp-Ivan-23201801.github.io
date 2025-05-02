@@ -1,0 +1,82 @@
+/* estilos.css */
+
+.custom-navbar {
+  padding: 20px;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.custom-navbar .nav-item {
+  margin-right: 2%;
+}
+
+body {
+  padding-top: 160px;
+}
+
+.titulo-principal {
+  font-size: 65px;
+  line-height: normal;
+  text-align: center;
+}
+
+.titulo-campeao {
+  font-size: 50px;
+  line-height: normal;
+  text-align: center;
+  font-weight: 700;
+}
+
+.titulo {
+  font-size: 40px;
+  line-height: normal;
+  text-align: center;
+}
+
+.texto-central {
+  font-size: 18px;
+  line-height: 1.8em;
+  text-align: center;
+}
+
+.texto-padrao {
+  font-size: 18px;
+  word-spacing: 0.1em;
+  letter-spacing: 0.5px;
+  line-height: 1.5em;
+  text-align: justify;
+  word-break: normal;
+  overflow-wrap: break-word;
+  hyphens: auto;
+}
+
+.subtexto {
+  font-size: 18px;
+  line-height: 0.1em;
+  text-align: center;
+}
+
+.nome {
+  font-size: 22px;
+  line-height: 2.5em;
+  text-align: center;
+  font-weight: 500;
+}
+
+.rodape-email {
+  text-align: center;
+  line-height: 1.875em;
+  font-size: 15px;
+}
+
+.rodape-copy {
+  text-align: center;
+  line-height: 1.79em;
+  font-size: 14px;
+}
+
+.imagem-link {
+  font-size: 30px;
+  font-weight: 500;
+  line-height: 2.5em;
+}
