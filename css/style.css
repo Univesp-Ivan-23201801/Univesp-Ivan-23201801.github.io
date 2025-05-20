@@ -80,3 +80,77 @@ body {
   font-weight: 500;
   line-height: 2.5em;
 }
+
+/* Cards */
+.titulocard {
+  text-align: center;
+  font-size: 26px;
+  font-weight: 600;
+  margin-bottom: 30px;
+  color: #333;
+}
+
+.card {
+  border: none;
+  border-radius: 15px;
+  color: #fff;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: center;
+  overflow: hidden;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+}
+
+.card .card-body {
+  padding: 20px;
+}
+
+.card .card-title {
+  font-size: 18px;
+  font-weight: 500;
+  margin-top: 10px;
+}
+
+.goleiro {
+  background: linear-gradient(135deg, #1e3c72, #2a5298);
+}
+
+.zagueiro {
+  background: linear-gradient(135deg, #283c86, #45a247);
+}
+
+.lateral-dir {
+  background: linear-gradient(135deg, #1f4037, #99f2c8);
+  color: #000;
+}
+
+.lateral-esq {
+  background: linear-gradient(135deg, #ff416c, #ff4b2b);
+}
+
+.volante {
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+}
+
+.meia {
+  background: linear-gradient(135deg, #6a11cb, #2575fc);
+}
+
+.atacante {
+  background: linear-gradient(135deg, #fc4a1a, #f7b733);
+  color: #000;
+}
+
+.card-icon {
+  font-size: 32px;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.container .row {
+  justify-content: center;
+}
