@@ -62,7 +62,14 @@ function preencherTabela(dados) {
     const tabela = document.getElementById('tabela').querySelector('tbody');
     tabela.innerHTML = "";
     
-    dados.forEach(item => {
+    // Ordena os dados pela data (mais recente primeiro)
+    const dadosOrdenados = [...dados].sort((a, b) => {
+        const dataA = new Date(a.Data);
+        const dataB = new Date(b.Data);
+        return dataB - dataA; // Mais recente primeiro
+    });
+    
+    dadosOrdenados.forEach(item => {
 
         const linha = document.createElement('tr');
         let icone = "";
@@ -98,38 +105,3 @@ function preencherTabela(dados) {
         tabela.appendChild(linha);
     });
 }
-
-// function getData(){
-//     let data = fetch("/data/jogos.json")
-//     .then((response) => {
-//     //     response.json().then((jogos) => {
-//     //        console.log(jogos)
-//     //     })
-//     // })
-//     return data
-// }
-
-// function newLine(jogos){
-//     console.log(data)
-//     linha = document.createElement("tr");
-//     tdData = document.createElement("td");
-//     tdHora = document.createElement("td");
-//     tdData.innerHTML = data.Data;
-//     tdHora.innerHTML = data.Horario;
-
-//     linha.appendChild(tdData);
-//     linha.appendChild(tdHora);
-
-//     return linha;
-// }
-
-// function main(){
-//     let jogos = getData();
-//     let tabela = document.getElementById("tabela");
-//     jogos.array.forEach(element => {
-//         let linha = newLine(element);
-//         tabela.appendChild(linha);
-//     });
-// }
-
-// main()
